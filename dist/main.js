@@ -6,10 +6,10 @@ var heroSpecialCount = {
   effectCount: 0,
   cooldownCount: 0
 };
-var villainSpecialCount = {
-  effectCount: 0,
-  cooldownCount: 0
-};
+// var villainSpecialCount = {
+//   effectCount: 0,
+//   cooldownCount: 0
+// };
 
 function Character() {
   this.health = 4;
