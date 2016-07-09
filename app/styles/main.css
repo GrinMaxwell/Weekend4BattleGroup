@@ -3,32 +3,47 @@ body {
 
 .icon {
   font-size: 256px;
-  text-align: center;
+  display: inline-block;
   color: #2DAEBF;
   text-shadow: 0px 2px 0px #0092B3, 0px 5px 2px #555;
-  transition: all 0.125s; }
+  transition: all 0.25s; }
 
-.icon:active {
-  font-size: 276px; }
+.attack {
+  font-size: 256px;
+  margin-left: 15%;
+  margin-right: 2%; }
+  .attack:active {
+    font-size: 276px; }
+
+.special {
+  font-size: 236px;
+  margin-right: 15%; }
+  .special:active {
+    font-size: 256px; }
 
 .cheer {
-  color: #F4B7D1; }
+  color: #F6B1C3; }
   .cheer:hover {
-    color: #F0A5C8; }
+    color: #F0788C; }
 
 .luck {
   color: #2BAB55; }
   .luck:hover {
     color: #1E8A10; }
 
-.grump {
+.grumpy {
   color: #3489CB; }
-  .grump:hover {
+  .grumpy:hover {
     color: #3468CB; }
 
-.brave {
+.bedtime {
   color: #E8A732; }
-  .brave:hover {
+  .bedtime:hover {
     color: #E38605; }
+
+.button_container {
+  background: #ccc;
+  width: 85%;
+  margin: 0 auto; }
 
 /*# sourceMappingURL=main.css.map */

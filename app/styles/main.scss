@@ -6,43 +6,67 @@ body {
 
 .icon {
   font-size: 256px;
-  text-align:center;
+  // text-align: center;
+  // margin: 16px;
+  display: inline-block;
   color: #2DAEBF;
   text-shadow: 
     0px 2px 0px #0092B3,
-    // 0px 2px 1px #0087A6,
-    // 0px 3px 0px #008099,
-    // 0px 4px 0px #00758c,
     0px 5px 2px #555;
-    // 0px 6px 0px #006a80,
-    // 0px 0px 0px #006073,
-    // 0px 8px 7px #005566;
-    transition: all 0.125s;
-  }
-.icon:active {
-  font-size: 276px;
+    transition: all 0.25s;
 }
-.cheer {
-  color: #F4B7D1;
-  &:hover {
-    color: #F0A5C8;
+.attack {
+  font-size: 256px;
+  margin-left: 15%;
+  margin-right: 2%;
+  &:active{
+    font-size: 276px;
   }
 }
-.luck {
-  color: #2BAB55;
-  &:hover {
-    color: #1E8A10;
+.special {
+  font-size: 236px;
+  margin-right: 15%;
+
+    &:active{
+    font-size: 256px;
   }
 }
-.grump {
-  color: #3489CB;
-  &:hover {
-  color: #3468CB;
-  }
+
+
+.cloud {
+  
 }
-.brave {
-  color: #E8A732;
-  &:hover {
-    color: #E38605;
-  }
+.heart {
+
 }
+// styles for characters
+  .cheer {
+    color: #F6B1C3;
+    &:hover {
+      color: #F0788C;
+    }
+  }
+  .luck {
+    color: #2BAB55;
+    &:hover {
+      color: #1E8A10;
+    }
+  }
+  .grumpy {
+    color: #3489CB;
+    &:hover {
+      color: #3468CB;
+    }
+  }
+  .bedtime {
+    color: #E8A732;
+    &:hover {
+      color: #E38605;
+    }
+  }
+.button_container {
+  background: #ccc;
+  width: 85%;
+  margin: 0 auto;
+}
+
