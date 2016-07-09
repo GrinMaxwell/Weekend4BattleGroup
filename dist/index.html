@@ -3,13 +3,14 @@
   <head>
     <meta charset="utf-8">
     <title>Feelings Fight</title>
+
     <!-- Normalise -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/4.2.0/normalize.min.css" media="screen" title="no title" charset="utf-8">
     <link href="https://fonts.googleapis.com/css?family=Atma" rel="stylesheet">
     <!-- Font Awesome -->
     <script src="https://use.fontawesome.com/95cea4501d.js"></script>
     <!-- main CSS -->
-    <link rel="stylesheet" href="../app/styles/main.css" media="screen">
+    <link rel="stylesheet" href="main.css" media="screen">
     <!-- zurb foundation fonts -->
     <link type="text/css" rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/foundicons/3.0.0/foundation-icons.css" />
   </head>
@@ -22,14 +23,14 @@
 The evil Professor Coldheart is up to no good again. His intense dislike of anything warm and fuzzy is wreaking havoc! Your mission, should you choose to accept it, is to stop this villain from turning the world into a horrible, loveless place. Help spread care and love. In the end, who knows...maybe even cold hearted villains can have feelings too.</div>
       <h3>Choose Your Character</h3>
       <div class="character">
-        <img src="images/braveheart.gif"/>
+        <img src="images/bedtime.gif"/>
         <ul class="properties">
-          <li>Name:<span> Brave Heart Lion</span></li>
-          <li>Special:<span> Charge! Get an extra attack.</span> </li>
+          <li>Name:<span> Bed Time Bear</span></li>
+          <li>Special:<span> Sleepytime! Enemy sleeps through a turn.</span> </li>
           <li></li>
           <li></li>
         </ul>
-        <a href="#braveheart"><input class="choose" type="button" value="Pick me!"/></a>
+        <a href="#bedtime"><input class="choose" type="button" value="Pick me!"/></a>
       </div>
       <div class="character">
         <img src="images/cheerbear.gif"/>
@@ -39,7 +40,7 @@ The evil Professor Coldheart is up to no good again. His intense dislike of anyt
           <li></li>
           <li></li>
         </ul>
-        <a href="#cheerbear"><input class="choose" type="button" value="Pick me!"/></a>
+        <a href="#cheer"><input class="choose" type="button" value="Pick me!"/></a>
       </div>
       <div class="character">
         <img src="images/grumpybear.gif"/>
@@ -49,7 +50,7 @@ The evil Professor Coldheart is up to no good again. His intense dislike of anyt
           <li></li>
           <li></li>
         </ul>
-        <a href="#grumpybear"><input class="choose" type="button" value="Pick me!"/></a>
+        <a href="#grumpy"><input class="choose" type="button" value="Pick me!"/></a>
       </div>
       <div class="character">
         <img src="images/luckbear.gif"/>
@@ -59,7 +60,7 @@ The evil Professor Coldheart is up to no good again. His intense dislike of anyt
         <li></li>
         <li></li>
       </ul>
-        <a href="#luckbear"><input class="choose" type="button" value="Pick me!"/></a>
+        <a href="#luck"><input class="choose" type="button" value="Pick me!"/></a>
       </div>
     </div>
     <div class="results">
@@ -79,23 +80,21 @@ The evil Professor Coldheart is up to no good again. His intense dislike of anyt
     </div>
 
 
-    <div class="icon cheer">
+    <div class="icon cheer hidden attack">
       <i class="fi-cloud"></i>
     </div>
 
-    <div class="icon luck">
+    <div class="icon luck hidden attack">
       <i class="fi-cloud"></i>
     </div>
 
-    <div class="icon grump">
+    <div class="icon grumpy hidden attack">
       <i class="fi-cloud"></i>
     </div>
 
-    <div class="icon brave">
+    <div class="icon bedtime hidden attack">
       <i class="fi-cloud"></i>
     </div>
-
-
     <!-- JQuery -->
     <script src="https://code.jquery.com/jquery-3.0.0.min.js"   integrity="sha256-JmvOoLtYsmqlsWxa7mDSLMwa6dZ9rrIdtrrVYRnDRH0="   crossorigin="anonymous"></script>
     <script src="main.js" type="text/javascript"></script>
