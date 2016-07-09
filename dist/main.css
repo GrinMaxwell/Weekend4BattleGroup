@@ -55,4 +55,37 @@ body {
     border-radius: 5px;
     border: 1px solid black; }
 
+body {
+  background-color: #eee; }
+
+.icon {
+  font-size: 256px;
+  text-align: center;
+  color: #2DAEBF;
+  text-shadow: 0px 2px 0px #0092B3, 0px 5px 2px #555;
+  transition: all 0.125s; }
+
+.icon:active {
+  font-size: 276px; }
+
+.cheer {
+  color: #F4B7D1; }
+  .cheer:hover {
+    color: #F0A5C8; }
+
+.luck {
+  color: #2BAB55; }
+  .luck:hover {
+    color: #1E8A10; }
+
+.grump {
+  color: #3489CB; }
+  .grump:hover {
+    color: #3468CB; }
+
+.brave {
+  color: #E8A732; }
+  .brave:hover {
+    color: #E38605; }
+
 /*# sourceMappingURL=main.css.map */
