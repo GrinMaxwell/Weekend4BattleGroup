@@ -1,12 +1,12 @@
 var protagonist;
 
 function renderVictory() {
-$('.victory').removeClass(hidden);
+$('.victory').removeClass('.hidden');
 $('#' + protagonist).hide();
 }
 
 function renderDefeat() {
-$('.defeat').removeClass(hidden);
+$('.defeat').removeClass('.hidden');
 $('#' + protagonist).hide();
 }
 
