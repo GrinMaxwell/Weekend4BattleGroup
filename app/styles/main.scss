@@ -1,15 +1,92 @@
 @import '_variables';
 
 body {
-  background-color: #eee;
-}
+    text-align: center;
+    background: url("images/cbbackground.jpeg") top center repeat;
 
+    h2 {
+      font-family: 'Atma', cursive;
+      font-size: 3rem;
+    }
+    .character-container {
+        width: 65%;
+        margin: 0 auto;
+        .story {
+          text-align: justify;
+          margin-top: 1rem;
+          margin-bottom: 2rem;
+        }
+
+        .character {
+            display: inline-block;
+            width: 24%;
+            // border: 2px solid black;
+
+            &:hover {
+              // transform: scale(1.2);
+            }
+            img {
+                width: 100%;
+                // border-bottom: 2px solid black;
+            }
+            li {
+                list-style-type: none;
+                text-align: left;
+            }
+        }
+    }
+    .hidden {
+      display: none;
+    }
+    .victory {
+        div {
+            width: 200px;
+            border: 2px solid black;
+            text-align: center;
+            font-size: 1.5rem;
+            padding: 1.3rem;
+            position: relative;
+            border-radius: 10px;
+            margin: 0 auto;
+        }
+        div::before {
+            content: '';
+            position: absolute;
+            top: 96px;
+            right: 5px;
+            border-width: 15px 10px 0;
+            border-style: solid;
+            border-color: black transparent;
+            display: block;
+            width: 0;
+        }
+        div::after {
+            content: '';
+            position: absolute;
+            top: 96px;
+            right: 8.2px;
+            border-width: 10px 7px 0;
+            border-style: solid;
+            border-color: white transparent;
+            display: block;
+            width: 0;
+        }
+    }
+    .result-img {
+        margin-top: 1rem;
+        border-radius: 5px;
+        border: 1px solid black;
+    }
+}
 .icon {
   display: inline-block;
   width: 280px;
   height: 280px;
   border: 1px solid black;
-  text-shadow: 
+  font-size: 256px;
+  text-align:center;
+  color: #2DAEBF;
+  text-shadow:
     0px 2px 0px #0092B3,
     0px 5px 2px #555;
     transition: all 0.25s;
@@ -59,9 +136,4 @@ body {
   height: 300px;
   margin: 36px auto;
   background: #ccc;
-}
-.cf {
-  content: "";
-  clear: both;
-  display: block;
 }
