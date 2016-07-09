@@ -1,23 +1,46 @@
-var protagonist;
+var bearname;
 
 function renderVictory() {
-$('.victory').removeClass(hidden);
-$('#' + protagonist).hide();
+$('.victory').removeClass('hidden');
+$('.victory').show();
+$('.defeat').hide();
+$('.results').show();
+$('.' + bearname).hide();
 }
 
 function renderDefeat() {
-$('.defeat').removeClass(hidden);
-$('#' + protagonist).hide();
+$('.defeat').removeClass('hidden');
+$('.defeat').show();
+$('.victory').hide();
+$('.results').show();
+$('.' + bearname).hide();
 }
 
 function renderFight(protagonist) {
   $('.character-container').hide();
-  $('#' + protagonist).show();
+  $('.' + bearname).show();
 }
 
 $(document).ready(function() {
     $('.choose').on('click', function(evt) {
-    protagonist = $(this).parent().attr('href').slice(1);
+    bearname = $(this).parent().attr('href').slice(1);
+      if (bearname === 'bedtime') {
+        protagonist = bedtimebear;
+        enemy.foe = bedtimebear;
+        $('.bedtime').removeClass('hidden');
+      } else if (bearname === 'grumpy') {
+        protagonist = grumpybear;
+        enemy.foe = grumpybear;
+        $('.grumpy').removeClass('hidden');
+      } else if (bearname === 'luck') {
+        protagonist = luckbear;
+        enemy.foe = luckbear;
+        $('.luck').removeClass('hidden');
+      } else if (bearname === 'cheer') {
+        protagonist = cheerbear;
+        enemy.foe = cheerbear;
+        $('.cheer').removeClass('hidden');
+      }
     renderFight();
     console.log(protagonist);
     });
@@ -25,7 +48,17 @@ $(document).ready(function() {
     $('.new-game').on('click', function(evt){
       $('.character-container').show();
       $('.results').hide();
+      healthReset();
     });
+
+    $('.attack').on('click', function () {
+      protagonist.bothAttack();
+    });
+
+    $('.special').on('click', function () {
+      protagonist.special();
+    });
+
   });
 
 
@@ -130,12 +163,19 @@ enemy.attackPwr = 1;
 enemy.accuracy = 0.5;
 }
 
+function healthReset() {
+  protagonist.health = 4;
+  enemy.health = 4;
+  heroAbilityReset();
+  villainAbilityReset();
+}
+
 function heroSpecial(that) {
-  if (protagonist!==braveheart || heroSpecialCount.effectCount!==0) {
+  if (protagonist!==bedtimebear || heroSpecialCount.effectCount!==0) {
   heroSpecialCount.effectCount = 6;
   heroSpecialCount.cooldownCount = 10;
   enemy.basicAttack();
-  } else if (protagonist===braveheart) {
+} else if (protagonist===bedtimebear) {
     protagonist.basicAttack();
     protagonist.turn = true;
     console.log('Charge!');
@@ -180,9 +220,9 @@ if (heroSpecialCount.cooldownCount === 0) {
 }
 };
 
-var braveheart = new Hero();
+var bedtimebear = new Hero();
 
-braveheart.special = function () {
+bedtimebear.special = function () {
   if (heroSpecialCount.cooldownCount === 0) {
   heroSpecial(this);
   // protagonist.turn = true;
@@ -222,8 +262,8 @@ grumpybear.special = function () {
 
 
 //eventually decided by click
-protagonist = braveheart;
-enemy.foe = braveheart;
+
+
 
 
 if (enemy.turn === true) {
