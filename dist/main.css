@@ -1,0 +1,58 @@
+body {
+  text-align: center;
+  background: url("images/cbbackground.jpeg") top center repeat; }
+  body h2 {
+    font-family: 'Atma', cursive;
+    font-size: 3rem; }
+  body .character-container {
+    width: 65%;
+    margin: 0 auto; }
+    body .character-container .story {
+      text-align: justify;
+      margin-top: 1rem;
+      margin-bottom: 2rem; }
+    body .character-container .character {
+      display: inline-block;
+      width: 24%; }
+      body .character-container .character img {
+        width: 100%; }
+      body .character-container .character li {
+        list-style-type: none;
+        text-align: left; }
+  body .hidden {
+    display: none; }
+  body .victory div {
+    width: 200px;
+    border: 2px solid black;
+    text-align: center;
+    font-size: 1.5rem;
+    padding: 1.3rem;
+    position: relative;
+    border-radius: 10px;
+    margin: 0 auto; }
+  body .victory div::before {
+    content: '';
+    position: absolute;
+    top: 96px;
+    right: 5px;
+    border-width: 15px 10px 0;
+    border-style: solid;
+    border-color: black transparent;
+    display: block;
+    width: 0; }
+  body .victory div::after {
+    content: '';
+    position: absolute;
+    top: 96px;
+    right: 8.2px;
+    border-width: 10px 7px 0;
+    border-style: solid;
+    border-color: white transparent;
+    display: block;
+    width: 0; }
+  body .result-img {
+    margin-top: 1rem;
+    border-radius: 5px;
+    border: 1px solid black; }
+
+/*# sourceMappingURL=main.css.map */
