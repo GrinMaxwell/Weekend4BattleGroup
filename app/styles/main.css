@@ -2,18 +2,19 @@ body {
   background-color: #eee; }
 
 .icon {
-  font-size: 256px;
   display: inline-block;
-  color: #2DAEBF;
+  width: 280px;
+  height: 280px;
+  border: 1px solid black;
   text-shadow: 0px 2px 0px #0092B3, 0px 5px 2px #555;
   transition: all 0.25s; }
 
 .attack {
-  font-size: 256px;
+  font-size: 236px;
   margin-left: 15%;
   margin-right: 2%; }
   .attack:active {
-    font-size: 276px; }
+    font-size: 256px; }
 
 .special {
   font-size: 236px;
@@ -32,18 +33,24 @@ body {
     color: #1E8A10; }
 
 .grumpy {
-  color: #3489CB; }
+  color: #6786F2; }
   .grumpy:hover {
     color: #3468CB; }
 
 .bedtime {
-  color: #E8A732; }
+  color: #32C5E6; }
   .bedtime:hover {
-    color: #E38605; }
+    color: #0898B4; }
 
 .button_container {
-  background: #ccc;
-  width: 85%;
-  margin: 0 auto; }
+  width: 90%;
+  height: 300px;
+  margin: 36px auto;
+  background: #ccc; }
+
+.cf {
+  content: "";
+  clear: both;
+  display: block; }
 
 /*# sourceMappingURL=main.css.map */
