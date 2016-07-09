@@ -1,3 +1,5 @@
+@import '_variables';
+
 body {
     text-align: center;
     background: url("images/cbbackground.jpeg") top center repeat;
@@ -76,13 +78,6 @@ body {
         border: 1px solid black;
     }
 }
-
-@import '_variables';
-
-body {
-  background-color: #eee;
-}
-
 .icon {
   font-size: 256px;
   text-align:center;
