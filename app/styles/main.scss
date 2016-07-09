@@ -136,44 +136,61 @@ body {
     }
 }
 .icon {
+  display: inline-block;
+  width: 280px;
+  height: 280px;
+  border: 1px solid black;
   font-size: 256px;
   text-align:center;
   color: #2DAEBF;
   text-shadow:
     0px 2px 0px #0092B3,
-    // 0px 2px 1px #0087A6,
-    // 0px 3px 0px #008099,
-    // 0px 4px 0px #00758c,
     0px 5px 2px #555;
-    // 0px 6px 0px #006a80,
-    // 0px 0px 0px #006073,
-    // 0px 8px 7px #005566;
-    transition: all 0.125s;
-  }
-.icon:active {
-  font-size: 276px;
+    transition: all 0.25s;
 }
-.cheer {
-  color: #F4B7D1;
-  &:hover {
-    color: #F0A5C8;
+.attack {
+  font-size: 236px;
+  margin-left: 15%;
+  margin-right: 2%;
+  &:active{
+    font-size: 256px;
   }
 }
-.luck {
-  color: #2BAB55;
-  &:hover {
-    color: #1E8A10;
+.special {
+  font-size: 236px;
+  margin-right: 15%;
+    &:active{
+    font-size: 256px;
   }
 }
-.grump {
-  color: #3489CB;
-  &:hover {
-  color: #3468CB;
+// styles for characters
+  .cheer {
+    color: #F6B1C3;
+    &:hover {
+      color: #F0788C;
+    }
   }
-}
-.brave {
-  color: #E8A732;
-  &:hover {
-    color: #E38605;
+  .luck {
+    color: #2BAB55;
+    &:hover {
+      color: #1E8A10;
+    }
   }
+  .grumpy {
+    color: #6786F2;
+    &:hover {
+      color: #3468CB;
+    }
+  }
+  .bedtime {
+    color: #32C5E6;
+    &:hover {
+      color: #0898B4;
+    }
+  }
+.button_container {
+  width: 90%;
+  height: 300px;
+  margin: 36px auto;
+  background: #ccc;
 }

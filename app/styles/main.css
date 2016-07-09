@@ -1,34 +1,108 @@
 body {
-  background-color: #eee; }
+  text-align: center;
+  background: url("images/cbbackground.jpeg") top center repeat; }
+  body h2 {
+    font-family: 'Atma', cursive;
+    font-size: 3rem; }
+  body .character-container {
+    width: 65%;
+    margin: 0 auto; }
+    body .character-container .story {
+      text-align: justify;
+      margin-top: 1rem;
+      margin-bottom: 2rem; }
+    body .character-container .character {
+      display: inline-block;
+      width: 24%; }
+      body .character-container .character img {
+        width: 100%; }
+      body .character-container .character li {
+        list-style-type: none;
+        text-align: left; }
+  body .hidden {
+    display: none; }
+  body .victory div {
+    width: 200px;
+    border: 2px solid black;
+    text-align: center;
+    font-size: 1.5rem;
+    padding: 1.3rem;
+    position: relative;
+    border-radius: 10px;
+    margin: 0 auto; }
+  body .victory div::before {
+    content: '';
+    position: absolute;
+    top: 96px;
+    right: 5px;
+    border-width: 15px 10px 0;
+    border-style: solid;
+    border-color: black transparent;
+    display: block;
+    width: 0; }
+  body .victory div::after {
+    content: '';
+    position: absolute;
+    top: 96px;
+    right: 8.2px;
+    border-width: 10px 7px 0;
+    border-style: solid;
+    border-color: white transparent;
+    display: block;
+    width: 0; }
+  body .result-img {
+    margin-top: 1rem;
+    border-radius: 5px;
+    border: 1px solid black; }
 
 .icon {
+  display: inline-block;
+  width: 280px;
+  height: 280px;
+  border: 1px solid black;
   font-size: 256px;
   text-align: center;
   color: #2DAEBF;
   text-shadow: 0px 2px 0px #0092B3, 0px 5px 2px #555;
-  transition: all 0.125s; }
+  transition: all 0.25s; }
 
-.icon:active {
-  font-size: 276px; }
+.attack {
+  font-size: 236px;
+  margin-left: 15%;
+  margin-right: 2%; }
+  .attack:active {
+    font-size: 256px; }
+
+.special {
+  font-size: 236px;
+  margin-right: 15%; }
+  .special:active {
+    font-size: 256px; }
 
 .cheer {
-  color: #F4B7D1; }
+  color: #F6B1C3; }
   .cheer:hover {
-    color: #F0A5C8; }
+    color: #F0788C; }
 
 .luck {
   color: #2BAB55; }
   .luck:hover {
     color: #1E8A10; }
 
-.grump {
-  color: #3489CB; }
-  .grump:hover {
+.grumpy {
+  color: #6786F2; }
+  .grumpy:hover {
     color: #3468CB; }
 
-.brave {
-  color: #E8A732; }
-  .brave:hover {
-    color: #E38605; }
+.bedtime {
+  color: #32C5E6; }
+  .bedtime:hover {
+    color: #0898B4; }
+
+.button_container {
+  width: 90%;
+  height: 300px;
+  margin: 36px auto;
+  background: #ccc; }
 
 /*# sourceMappingURL=main.css.map */
