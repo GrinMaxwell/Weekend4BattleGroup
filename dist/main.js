@@ -14,6 +14,8 @@ $('.defeat').show();
 $('.victory').hide();
 $('.results').show();
 $('.' + bearname).hide();
+$('.victory').removeClass('.hidden');
+$('#' + protagonist).hide();
 }
 
 function renderFight(protagonist) {
