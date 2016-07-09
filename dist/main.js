@@ -60,9 +60,11 @@ Character.prototype.basicAttack = function () {
     if (this.foe === protagonist) {
       console.log('Defeat!');
       // renderDefeat();
+      renderDefeat();
     } else if (this.foe === enemy) {
       console.log('Victory!');
       // renderVictory();
+      renderVictory();
     }
   }
   // var self = this;
