@@ -6,6 +6,7 @@ $('.victory').show();
 $('.defeat').hide();
 $('.results').show();
 $('.' + bearname).hide();
+$('.fight').addClass('hidden');
 }
 
 function renderDefeat() {
@@ -14,12 +15,14 @@ $('.defeat').show();
 $('.victory').hide();
 $('.results').show();
 $('.' + bearname).hide();
+$('.fight').addClass('hidden');
 $('.victory').removeClass('.hidden');
 $('#' + protagonist).hide();
 }
 
 function renderFight(protagonist) {
   $('.character-container').hide();
+  $('.fight').removeClass('hidden');
   $('.' + bearname).show();
 }
 
@@ -168,6 +171,8 @@ enemy.accuracy = 0.5;
 function healthReset() {
   protagonist.health = 4;
   enemy.health = 4;
+  $('.enemy-health').show();
+  $('.protagonist-health').show();
   heroAbilityReset();
   villainAbilityReset();
 }

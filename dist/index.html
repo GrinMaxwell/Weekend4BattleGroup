@@ -7,6 +7,7 @@
     <!-- Normalise -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/4.2.0/normalize.min.css" media="screen" title="no title" charset="utf-8">
 
+    <link href="https://fonts.googleapis.com/css?family=Fontdiner+Swanky" rel="stylesheet">
     <!-- Font Awesome -->
     <!-- <script src="https://use.fontawesome.com/95cea4501d.js"></script> -->
     <!-- main CSS -->
@@ -15,32 +16,150 @@
     <link type="text/css" rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/foundicons/3.0.0/foundation-icons.css" />
   <!--  fontdiner swanky -->
 <link href="https://fonts.googleapis.com/css?family=Fontdiner+Swanky" rel="stylesheet">
-    
+<link href="https://fonts.googleapis.com/css?family=Frijole" rel="stylesheet"/>
   </head>
   <body>
 
-    <div class="button_container cheer">
-        <div class=""> <i class="fi-cloud cheer attack"></i> </div>
-        <div class="icon cheer special"> <i class="fi-heart"></i> </div>
+    <header>
+      <h2>Feelings Fight!</h2>
+    </header>
+    <div class="character-container">
+      <div class="story">
+The evil Professor Coldheart is up to no good again. His intense dislike of anything warm and fuzzy is wreaking havoc! Your mission, should you choose to accept it, is to stop this villain from turning the world into a horrible, loveless place. Help spread care and love. In the end, who knows...maybe even cold hearted villains will have feelings too.</div>
+      <h3>Choose Your Character</h3>
+      <div class="character">
+        <img src="images/bedtime.gif"/>
+        <ul class="properties">
+          <li><span>Name:</span> Bed Time Bear</li>
+          <li><span>Special:</span> Sleepytime! Enemy sleeps through a turn.</li>
+          <li></li>
+          <li></li>
+        </ul>
+        <a href="#bedtime"><input class="choose" type="button" value="Pick me!"/></a>
+      </div>
+      <div class="character">
+        <img src="images/cheerbear.gif"/>
+        <ul class="properties">
+          <li><span>Name:</span> Cheer Bear</li>
+          <li><span>Special:</span> Cheer Up! Increase damage for 3 turns.</li>
+        </ul>
+        <a href="#cheer"><input class="choose" type="button" value="Pick me!"/></a>
+      </div>
+      <div class="character">
+        <img src="images/grumpybear.gif"/>
+        <ul class="properties">
+          <li><span>Name:</span> Grumpy Bear</li>
+          <li><span>Special:</span> Got the Grumps! Lowers enemy accuracy for 3 turns.</li>
+        </ul>
+        <a href="#grumpy"><input class="choose" type="button" value="Pick me!"/></a>
+      </div>
+      <div class="character">
+        <img src="images/luckbear.gif"/>
+        <ul class="properties">
+        <li><span>Name:</span> Luck Bear</li>
+        <li><span>Special:</span> Luck of the Irish! Increase personal accuracy.</li>
+        <li></li>
+        <li></li>
+      </ul>
+        <a href="#luck"><input class="choose" type="button" value="Pick me!"/></a>
+      </div>
     </div>
-<!-- buttons and graphics START -->
-    <div class="button_container luck">
-        <div class="icon luck attack"> <i class="fi-cloud"></i> </div>
-        <div class="icon luck special"> <i class="fi-heart"></i> </div>
+    <div class="results">
+    <div class="victory hidden">
+      <h2>Victory!</h2>
+      <div>I can't contain my feelings!</div>
+      <img class="result-img" src="images/coldheart.jpg"/>
+      <p>You defeated Professor Coldheart!</p>
+      <input class="new-game" type="button" value="New Game"/>
+    </div>
+    <div class="defeat hidden">
+      <h2>Defeat!</h2>
+      <img class="result-img" src="images/greencreature.jpg"/>
+      <p>You turned into a Green Creature Slave!</p>
+      <input class="new-game" type="button" value="New Game"/>
+    </div>
+    </div>
+<div class="fight hidden">
+  <div class="button_container cheer hidden">
+      <div class="icon cheer attack"> <i class="fi-cloud"></i> </div>
+      <div class="icon cheer special"> <i class="fi-heart"></i> </div>
+  </div>
+
+  <div class="button_container luck hidden">
+      <div class="icon luck attack"> <i class="fi-cloud"></i> </div>
+      <div class="icon luck special"> <i class="fi-heart"></i> </div>
+  </div>
+
+  <div class="button_container grumpy hidden">
+      <div class="icon grumpy attack"> <i class="fi-cloud"></i> </div>
+      <div class="icon grumpy special"> <i class="fi-heart"></i> </div>
+  </div>
+
+  <div class="button_container bedtime hidden">
+      <div class="icon bedtime attack"> <i class="fi-cloud"></i> </div>
+      <div class="icon bedtime special"> <i class="fi-heart"></i> </div>
+  </div>
+
+  <div class="protagonist"><h3>Your Rainbow Power:</h3>
+    <div class="protagonist-health-1 protagonist-health"><img src="images/rainbow.svg"/></div>
+    <div class="protagonist-health-2 protagonist-health"><img src="images/rainbow.svg"/></div>
+    <div class="protagonist-health-3 protagonist-health"><img src="images/rainbow.svg"/></div>
+    <div class="protagonist-health-4 protagonist-health"><img src="images/rainbow.svg"/></div>
+  </div>
+
+  <div class="enemy"><h3>Professor Coldheart</h3>
+    <div class="enemy-health-1 enemy-health"><img src="images/icy-heart.jpg"/></div>
+    <div class="enemy-health-2 enemy-health"><img src="images/icy-heart.jpg"/></div>
+    <div class="enemy-health-3 enemy-health"><img src="images/icy-heart.jpg"/></div>
+    <div class="enemy-health-4 enemy-health"><img src="images/icy-heart.jpg"/></div>
+  </div>
+
+</div>
+    <div class="button_container cheer hidden">
+        <img src="images/cheerbear.gif">
+        <div><i class="fi-cloud cheer attack"></i>
+        <i class="fi-heart cheer special"></i>
+      </div>
     </div>
 
-    <div class="button_container grumpy">
-        <div class="icon grumpy attack"> <i class="fi-cloud"></i> </div>
-        <div class="icon grumpy special"> <i class="fi-heart"></i> </div>
+    <div class="button_container luck hidden">
+        <img src="images/luckbear.gif">
+        <div> <i class="fi-cloud luck attack"></i>
+        <i class="fi-heart luck special"></i>
+        </div>
     </div>
 
-    <div class="button_container bedtime">
-        <div class="icon bedtime attack"> <i class="fi-cloud"></i> </div>
-        <div class="icon bedtime special"> <i class="fi-heart"></i> </div>
+    <div class="button_container grumpy hidden">
+        <img src="images/grumpybear.gif">
+        <div><i class="fi-cloud grumpy attack"></i>
+        <i class="fi-heart grumpy special"></i>
+      </div>
     </div>
 
+    <div class="button_container bedtime hidden">
+        <img src="images/bedtime.gif"/>
+        <div><i class="fi-cloud bedtime attack"></i>
+        <i class="fi-heart bedtime special"></i>
+      </div>
+    </div>
 
-
+<!-- hit and miss  -->
+    <div class="protagonist-hit hidden">
+      <p> HIT! You just gave Professor Coldheart</p>
+      <p>a face full of FEELINGS!</p>
+    </div>
+    <div class="protagonist-miss hidden">
+      <p> MISS!</p>
+      <p></p>
+    </div>
+    <div class="protagonist-hit ">
+      <p>HIT! Professor Coldheart is chipping away</p>
+      <p>at your cheer!</p>
+    </div>
+    <div class="protagonist-miss ">
+      <p> MISS</p>
+      <p></p>
+    </div>
 <!-- buttons and graphics END -->
 
     <!-- JQuery -->

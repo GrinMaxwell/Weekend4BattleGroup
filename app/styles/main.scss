@@ -20,7 +20,6 @@ body {
         .character {
             display: inline-block;
             width: 24%;
-            // border: 2px solid black;
 
             &:hover {
               // transform: scale(1.2);
@@ -135,5 +134,40 @@ body {
   width: 90%;
   height: 300px;
   margin: 36px auto;
-  background: #ccc;
+}
+.protagonist-hit {
+  font-family: 'Fontdiner Swanky', cursive;
+  font-weight: bold;
+  font-size: 36px;
+  color: -webkit-gradient(
+    linear, left top, right top,
+    color-stop(0, #f22),
+    color-stop(0.15, #f2f),
+    color-stop(0.3, #22f),
+    color-stop(0.45, #2ff),
+    color-stop(0.6, #2f2),
+    color-stop(0.75, #2f2),
+    color-stop(0.9, #ff2),
+    color-stop(1, #f22));
+  }
+.protagonist-miss {
+  font-family: 'Fontdiner Swanky', cursive;
+  font-weight: bold;
+  font-size: 36px;
+  color: -webkit-gradient(
+    linear, left top, right top,
+    color-stop(0, #f22),
+    color-stop(0.15, #f2f),
+    color-stop(0.3, #22f),
+    color-stop(0.45, #2ff),
+    color-stop(0.6, #2f2),
+    color-stop(0.75, #2f2),
+    color-stop(0.9, #ff2),
+    color-stop(1, #f22));
+}
+.enemy-hit {
+  
+}
+.enemy-miss {
+
 }
