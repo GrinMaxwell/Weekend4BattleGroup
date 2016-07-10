@@ -202,3 +202,29 @@ body {
   margin: 36px auto;
   // background: #ccc;
 }
+
+.enemy div{
+  display: inline-block;
+  width: 15%;
+
+}
+.enemy h3{
+  color: #00D5FF;
+  font-family: 'Frijole', sans-serif;
+  font-size: 3rem;
+}
+
+.protagonist div{
+  width: 15%;
+  display: inline-block;
+}
+.protagonist h3{
+  font-size: 3rem;
+  font-family: 'Fontdiner Swanky', sans-serif;
+  background-image: -webkit-gradient( linear, left top, right top, color-stop(0, #f22), color-stop(0.15, #f2f), color-stop(0.3, #22f), color-stop(0.45, #2ff), color-stop(0.6, #2f2),color-stop(0.75, #2f2), color-stop(0.9, #ff2), color-stop(1, #f22) );
+  background-image: gradient( linear, left top, right top, color-stop(0, #f22), color-stop(0.15, #f2f), color-stop(0.3, #22f), color-stop(0.45, #2ff), color-stop(0.6, #2f2),color-stop(0.75, #2f2), color-stop(0.9, #ff2), color-stop(1, #f22) );
+  color:transparent;
+  -webkit-background-clip: text;
+  background-clip: text;
+  //^stolen from https://rainbowcoding.com/how-to-create-rainbow-text-in-html-css-javascript/
+}
