@@ -159,7 +159,8 @@ body {
 .button_container {
   width: 90%;
   height: 300px;
-  margin: 36px auto; }
+  margin: 36px auto;
+  position: relative; }
 
 .enemy div {
   display: inline-block;
@@ -182,5 +183,12 @@ body {
   color: transparent;
   -webkit-background-clip: text;
   background-clip: text; }
+
+.button_container h5 {
+  font-family: 'Fontdiner Swanky', sans-serif;
+  font-size: 2rem;
+  display: inline-block;
+  position: absolute;
+  top: 3rem; }
 
 /*# sourceMappingURL=main.css.map */

@@ -134,6 +134,11 @@ body {
   width: 90%;
   height: 300px;
   margin: 36px auto;
+<<<<<<< HEAD
+=======
+  // background: #ccc;
+  position: relative;
+>>>>>>> 27eeec00155770983f965fbcc1e92dfb5c29c46b
 }
 .protagonist-hit {
   font-family: 'Fontdiner Swanky', cursive;
@@ -169,5 +174,16 @@ body {
   
 }
 .enemy-miss {
+
+}
+
+.button_container h5{
+  font-family: 'Fontdiner Swanky', sans-serif;
+  font-size: 2rem;
+  display: inline-block;
+  position: absolute;
+  top: 3rem;
+  // left: -5rem;
+
 
 }
