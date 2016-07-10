@@ -120,21 +120,21 @@ body {
   transition: all 0.25s; }
 
 .attack {
-  font-size: 236px;
+  font-size: 118px;
   margin-left: 15%;
   margin-right: 2%;
   text-shadow: 0px 2px 0px #0092B3, 0px 5px 2px #555;
   transition: all 0.25s; }
   .attack:active {
-    font-size: 256px; }
+    font-size: 125px; }
 
 .special {
-  font-size: 236px;
+  font-size: 110px;
   margin-right: 15%;
   text-shadow: 0px 2px 0px #0092B3, 0px 5px 2px #555;
   transition: all 0.25s; }
   .special:active {
-    font-size: 256px; }
+    font-size: 120px; }
 
 .cheer {
   color: #F6B1C3; }
@@ -158,25 +158,32 @@ body {
 
 .button_container {
   width: 90%;
-  height: 300px;
-  margin: 36px auto;
+  height: 120px;
+  margin: 0px auto;
   position: relative; }
 
 .enemy div {
   display: inline-block;
-  width: 15%; }
+  width: 10%;
+  height: 3rem; }
 
 .enemy h3 {
   color: #00D5FF;
   font-family: 'Frijole', sans-serif;
+  margin: 0 auto;
   font-size: 3rem; }
 
+.enemy img {
+  width: 100%; }
+
 .protagonist div {
-  width: 15%;
-  display: inline-block; }
+  width: 10%;
+  display: inline-block;
+  height: 3rem; }
 
 .protagonist h3 {
   font-size: 3rem;
+  margin: 0 auto;
   font-family: 'Fontdiner Swanky', sans-serif;
   background-image: -webkit-gradient(linear, left top, right top, color-stop(0, #f22), color-stop(0.15, #f2f), color-stop(0.3, #22f), color-stop(0.45, #2ff), color-stop(0.6, #2f2), color-stop(0.75, #2f2), color-stop(0.9, #ff2), color-stop(1, #f22));
   background-image: gradient(linear, left top, right top, color-stop(0, #f22), color-stop(0.15, #f2f), color-stop(0.3, #22f), color-stop(0.45, #2ff), color-stop(0.6, #2f2), color-stop(0.75, #2f2), color-stop(0.9, #ff2), color-stop(1, #f22));
@@ -189,6 +196,6 @@ body {
   font-size: 2rem;
   display: inline-block;
   position: absolute;
-  top: 3rem; }
+  top: 1rem; }
 
 /*# sourceMappingURL=main.css.map */
