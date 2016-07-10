@@ -47,7 +47,6 @@ $(document).ready(function() {
         $('.cheer').removeClass('hidden');
       }
     renderFight();
-    console.log(protagonist);
     });
 
     $('.new-game').on('click', function(evt){
@@ -129,8 +128,6 @@ Villain.prototype = Object.create(Character.prototype);
 Villain.prototype.constructor = Villain;
 
 function roundCount (char){
-  console.log(heroSpecialCount.effectCount);
-  console.log(heroSpecialCount.cooldownCount);
   if (heroSpecialCount.effectCount !== 0) {
     heroSpecialCount.effectCount--;
   }
@@ -150,12 +147,11 @@ function roundCount (char){
       heroAbilityReset();
     }
   }
+  healthRender();
   roundNum++;
   // console.log(this);
   char.turn = false;
   char.foe.turn = true;
-  console.log(char);
-  console.log('prot turn', protagonist.turn);
 }
 
 function heroAbilityReset() {
@@ -171,10 +167,40 @@ enemy.accuracy = 0.5;
 function healthReset() {
   protagonist.health = 4;
   enemy.health = 4;
-  $('.enemy-health').show();
-  $('.protagonist-health').show();
+  $('.enemy-health').removeClass('hidden');
+  $('.protagonist-health').removeClass('hidden');
   heroAbilityReset();
   villainAbilityReset();
+}
+
+function healthRender() {
+  console.log('prot health', protagonist.health);
+  console.log('enemy health', enemy.health);
+  if (protagonist.health === 3) {
+    $('.protagonist-health-4').addClass('hidden');
+  }
+  if (protagonist.health === 2) {
+    $('.protagonist-health-3').addClass('hidden');
+    $('.protagonist-health-4').addClass('hidden');
+  }
+  if (protagonist.health === 1) {
+    $('.protagonist-health-2').addClass('hidden');
+    $('.protagonist-health-3').addClass('hidden');
+    $('.protagonist-health-4').addClass('hidden');
+  }
+
+  if (enemy.health === 3) {
+    $('.enemy-health-4').addClass('hidden');
+  }
+  if (enemy.health === 2) {
+    $('.enemy-health-3').addClass('hidden');
+    $('.enemy-health-4').addClass('hidden');
+  }
+  if (enemy.health === 1) {
+    $('.enemy-health-2').addClass('hidden');
+    $('.enemy-health-3').addClass('hidden');
+    $('.enemy-health-4').addClass('hidden');
+  }
 }
 
 function heroSpecial(that) {
@@ -185,8 +211,6 @@ function heroSpecial(that) {
 } else if (protagonist===bedtimebear) {
     protagonist.basicAttack();
     protagonist.turn = true;
-    console.log('Charge!');
-    console.log('prot turn', protagonist.turn);
     heroSpecialCount.cooldownCount = 10;
   }
   roundCount(that);
@@ -267,8 +291,6 @@ grumpybear.special = function () {
 
 
 
-
-//eventually decided by click
 
 
 
