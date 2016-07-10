@@ -1,8 +1,9 @@
 body {
   text-align: center;
+  font-family: helvetica;
   background: url("images/cbbackground.jpeg") top center repeat; }
   body h2 {
-    font-family: 'Atma', cursive;
+    font-family: 'Fontdiner Swanky', cursive;
     font-size: 3rem; }
   body .character-container {
     width: 65%;
@@ -10,7 +11,13 @@ body {
     body .character-container .story {
       text-align: justify;
       margin-top: 1rem;
-      margin-bottom: 2rem; }
+      margin-bottom: 2rem;
+      padding-top: 0.5rem;
+      padding-bottom: 0.5rem;
+      font-size: 1.2rem;
+      font-style: italic;
+      border-top: 2px solid black;
+      border-bottom: 2px solid black; }
     body .character-container .character {
       display: inline-block;
       width: 24%; }
@@ -19,6 +26,46 @@ body {
       body .character-container .character li {
         list-style-type: none;
         text-align: left; }
+        body .character-container .character li span {
+          font-weight: bold;
+          font-family: 'Fontdiner Swanky', cursive; }
+      body .character-container .character .choose {
+        border-radius: 5px;
+        font-family: 'Fontdiner Swanky', cursive;
+        font-size: 1.2rem;
+        padding: 0.7rem;
+        border: 2px solid black;
+        background-color: white;
+        margin-bottom: 1rem; }
+        body .character-container .character .choose:hover {
+          color: white;
+          transform: scale(1.1);
+          background: linear-gradient(270deg, #38e182, #f7077a, #ffe933, #ff8f33, #ff2f00, #c500ff);
+          background-size: 1200% 1200%;
+          -webkit-animation: Rainbow 5s ease infinite;
+          -moz-animation: Rainbow 5s ease infinite;
+          animation: Rainbow 5s ease infinite; }
+@-webkit-keyframes Rainbow {
+  0% {
+    background-position: 0% 50%; }
+  50% {
+    background-position: 100% 50%; }
+  100% {
+    background-position: 0% 50%; } }
+@-moz-keyframes Rainbow {
+  0% {
+    background-position: 0% 50%; }
+  50% {
+    background-position: 100% 50%; }
+  100% {
+    background-position: 0% 50%; } }
+@keyframes Rainbow {
+  0% {
+    background-position: 0% 50%; }
+  50% {
+    background-position: 100% 50%; }
+  100% {
+    background-position: 0% 50%; } }
   body .hidden {
     display: none; }
   body .victory div {
@@ -33,7 +80,7 @@ body {
   body .victory div::before {
     content: '';
     position: absolute;
-    top: 96px;
+    top: 95px;
     right: 5px;
     border-width: 15px 10px 0;
     border-style: solid;
@@ -43,7 +90,7 @@ body {
   body .victory div::after {
     content: '';
     position: absolute;
-    top: 96px;
+    top: 95px;
     right: 8.2px;
     border-width: 10px 7px 0;
     border-style: solid;
@@ -54,35 +101,64 @@ body {
     margin-top: 1rem;
     border-radius: 5px;
     border: 1px solid black; }
+  body .new-game {
+    padding: 0.7rem;
+    margin-bottom: 1rem;
+    border-radius: 10px;
+    background: url("images/rainbowbg.jpg");
+    font-family: 'Fontdiner Swanky', cursive;
+    border: 2px solid black; }
 
 .icon {
+  display: inline-block;
+  width: 280px;
+  height: 280px;
   font-size: 256px;
   text-align: center;
   color: #2DAEBF;
   text-shadow: 0px 2px 0px #0092B3, 0px 5px 2px #555;
-  transition: all 0.125s; }
+  transition: all 0.25s; }
 
-.icon:active {
-  font-size: 276px; }
+.attack {
+  font-size: 236px;
+  margin-left: 15%;
+  margin-right: 2%;
+  text-shadow: 0px 2px 0px #0092B3, 0px 5px 2px #555;
+  transition: all 0.25s; }
+  .attack:active {
+    font-size: 256px; }
+
+.special {
+  font-size: 236px;
+  margin-right: 15%;
+  text-shadow: 0px 2px 0px #0092B3, 0px 5px 2px #555;
+  transition: all 0.25s; }
+  .special:active {
+    font-size: 256px; }
 
 .cheer {
-  color: #F4B7D1; }
+  color: #F6B1C3; }
   .cheer:hover {
-    color: #F0A5C8; }
+    color: #F0788C; }
 
 .luck {
   color: #2BAB55; }
   .luck:hover {
     color: #1E8A10; }
 
-.grump {
-  color: #3489CB; }
-  .grump:hover {
+.grumpy {
+  color: #6786F2; }
+  .grumpy:hover {
     color: #3468CB; }
 
-.brave {
-  color: #E8A732; }
-  .brave:hover {
-    color: #E38605; }
+.bedtime {
+  color: #32C5E6; }
+  .bedtime:hover {
+    color: #0898B4; }
+
+.button_container {
+  width: 90%;
+  height: 300px;
+  margin: 36px auto; }
 
 /*# sourceMappingURL=main.css.map */
