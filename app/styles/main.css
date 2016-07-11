@@ -1,50 +1,127 @@
-/*
-Error: Invalid CSS after "...ition: relative": expected "{", was ";"
-        on line 140 of app/styles/main.scss
+body {
+  text-align: center;
+  background: url("images/cbbackground.jpeg") top center repeat; }
+  body h2 {
+    font-family: 'Atma', cursive;
+    font-size: 3rem; }
+  body .character-container {
+    width: 65%;
+    margin: 0 auto; }
+    body .character-container .story {
+      text-align: justify;
+      margin-top: 1rem;
+      margin-bottom: 2rem; }
+    body .character-container .character {
+      display: inline-block;
+      width: 22%; }
+      body .character-container .character img {
+        width: 100%; }
+      body .character-container .character li {
+        list-style-type: none;
+        text-align: left; }
+  body .hidden {
+    display: none; }
+  body .victory div {
+    width: 200px;
+    border: 2px solid black;
+    text-align: center;
+    font-size: 1.5rem;
+    padding: 1.3rem;
+    position: relative;
+    border-radius: 10px;
+    margin: 0 auto; }
+  body .victory div::before {
+    content: '';
+    position: absolute;
+    top: 96px;
+    right: 5px;
+    border-width: 15px 10px 0;
+    border-style: solid;
+    border-color: black transparent;
+    display: block;
+    width: 0; }
+  body .victory div::after {
+    content: '';
+    position: absolute;
+    top: 96px;
+    right: 8.2px;
+    border-width: 10px 7px 0;
+    border-style: solid;
+    border-color: white transparent;
+    display: block;
+    width: 0; }
+  body .result-img {
+    margin-top: 1rem;
+    border-radius: 5px;
+    border: 1px solid black; }
 
-135:   height: 300px;
-136:   margin: 36px auto;
-137: <<<<<<< HEAD
-138: =======
-139:   // background: #ccc;
-140:   position: relative;
-141: >>>>>>> 27eeec00155770983f965fbcc1e92dfb5c29c46b
-142: }
-143: .protagonist-hit {
-144:   font-family: 'Fontdiner Swanky', cursive;
-145:   font-weight: bold;
+.icon {
+  display: inline-block;
+  width: 280px;
+  height: 280px;
+  border: 1px solid black;
+  font-size: 256px;
+  text-align: center;
+  color: #2DAEBF;
+  text-shadow: 0px 2px 0px #0092B3, 0px 5px 2px #555;
+  transition: all 0.25s; }
 
-Backtrace:
-app/styles/main.scss:140
-/usr/local/lib/ruby/gems/2.3.0/gems/sass-3.4.22/lib/sass/scss/parser.rb:1189:in `expected'
-/usr/local/lib/ruby/gems/2.3.0/gems/sass-3.4.22/lib/sass/scss/parser.rb:1125:in `expected'
-/usr/local/lib/ruby/gems/2.3.0/gems/sass-3.4.22/lib/sass/scss/parser.rb:1120:in `tok!'
-/usr/local/lib/ruby/gems/2.3.0/gems/sass-3.4.22/lib/sass/scss/parser.rb:656:in `block'
-/usr/local/lib/ruby/gems/2.3.0/gems/sass-3.4.22/lib/sass/scss/parser.rb:726:in `declaration_or_ruleset'
-/usr/local/lib/ruby/gems/2.3.0/gems/sass-3.4.22/lib/sass/scss/parser.rb:676:in `block_child'
-/usr/local/lib/ruby/gems/2.3.0/gems/sass-3.4.22/lib/sass/scss/parser.rb:668:in `block_contents'
-/usr/local/lib/ruby/gems/2.3.0/gems/sass-3.4.22/lib/sass/scss/parser.rb:657:in `block'
-/usr/local/lib/ruby/gems/2.3.0/gems/sass-3.4.22/lib/sass/scss/parser.rb:649:in `ruleset'
-/usr/local/lib/ruby/gems/2.3.0/gems/sass-3.4.22/lib/sass/scss/parser.rb:675:in `block_child'
-/usr/local/lib/ruby/gems/2.3.0/gems/sass-3.4.22/lib/sass/scss/parser.rb:668:in `block_contents'
-/usr/local/lib/ruby/gems/2.3.0/gems/sass-3.4.22/lib/sass/scss/parser.rb:125:in `stylesheet'
-/usr/local/lib/ruby/gems/2.3.0/gems/sass-3.4.22/lib/sass/scss/parser.rb:41:in `parse'
-/usr/local/lib/ruby/gems/2.3.0/gems/sass-3.4.22/lib/sass/engine.rb:406:in `_to_tree'
-/usr/local/lib/ruby/gems/2.3.0/gems/sass-3.4.22/lib/sass/engine.rb:381:in `_render_with_sourcemap'
-/usr/local/lib/ruby/gems/2.3.0/gems/sass-3.4.22/lib/sass/engine.rb:298:in `render_with_sourcemap'
-/usr/local/lib/ruby/gems/2.3.0/gems/sass-3.4.22/lib/sass/plugin/compiler.rb:492:in `update_stylesheet'
-/usr/local/lib/ruby/gems/2.3.0/gems/sass-3.4.22/lib/sass/plugin/compiler.rb:215:in `block in update_stylesheets'
-/usr/local/lib/ruby/gems/2.3.0/gems/sass-3.4.22/lib/sass/plugin/compiler.rb:209:in `each'
-/usr/local/lib/ruby/gems/2.3.0/gems/sass-3.4.22/lib/sass/plugin/compiler.rb:209:in `update_stylesheets'
-/usr/local/lib/ruby/gems/2.3.0/gems/sass-3.4.22/lib/sass/plugin/compiler.rb:473:in `on_file_changed'
-/usr/local/lib/ruby/gems/2.3.0/gems/sass-3.4.22/lib/sass/plugin/compiler.rb:331:in `block in watch'
-/usr/local/lib/ruby/gems/2.3.0/gems/sass-3.4.22/vendor/listen/lib/listen/listener.rb:252:in `on_change'
-/usr/local/lib/ruby/gems/2.3.0/gems/sass-3.4.22/vendor/listen/lib/listen/listener.rb:290:in `block in initialize_adapter'
-/usr/local/lib/ruby/gems/2.3.0/gems/sass-3.4.22/vendor/listen/lib/listen/adapter.rb:254:in `report_changes'
-/usr/local/lib/ruby/gems/2.3.0/gems/sass-3.4.22/vendor/listen/lib/listen/adapter.rb:323:in `poll_changed_directories'
-/usr/local/lib/ruby/gems/2.3.0/gems/sass-3.4.22/vendor/listen/lib/listen/adapter.rb:299:in `block in start_poller'
-*/
-body:before {
-  white-space: pre;
-  font-family: monospace;
-  content: "Error: Invalid CSS after \"...ition: relative\": expected \"{\", was \";\"\A         on line 140 of app/styles/main.scss\A \A 135:   height: 300px;\A 136:   margin: 36px auto;\A 137: <<<<<<< HEAD\A 138: =======\A 139:   // background: #ccc;\A 140:   position: relative;\A 141: >>>>>>> 27eeec00155770983f965fbcc1e92dfb5c29c46b\A 142: }\A 143: .protagonist-hit {\A 144:   font-family: 'Fontdiner Swanky', cursive;\A 145:   font-weight: bold;"; }
+.attack {
+  font-size: 236px;
+  margin-left: 15%;
+  margin-right: 2%; }
+  .attack:active {
+    font-size: 256px; }
+
+.special {
+  font-size: 236px;
+  margin-right: 15%; }
+  .special:active {
+    font-size: 256px; }
+
+.cheer {
+  color: #F6B1C3; }
+  .cheer:hover {
+    color: #F0788C; }
+
+.luck {
+  color: #2BAB55; }
+  .luck:hover {
+    color: #1E8A10; }
+
+.grumpy {
+  color: #6786F2; }
+  .grumpy:hover {
+    color: #3468CB; }
+
+.bedtime {
+  color: #32C5E6; }
+  .bedtime:hover {
+    color: #0898B4; }
+
+.button_container {
+  width: 90%;
+  height: 300px;
+  margin: 36px auto;
+  position: relative; }
+
+.protagonist-hit {
+  font-family: 'Fontdiner Swanky', cursive;
+  font-weight: bold;
+  font-size: 36px;
+  color: -webkit-gradient(linear, left top, right top, color-stop(0, #f22), color-stop(0.15, #f2f), color-stop(0.3, #22f), color-stop(0.45, #2ff), color-stop(0.6, #2f2), color-stop(0.75, #2f2), color-stop(0.9, #ff2), color-stop(1, #f22)); }
+
+.protagonist-miss {
+  font-family: 'Fontdiner Swanky', cursive;
+  font-weight: bold;
+  font-size: 36px;
+  color: -webkit-gradient(linear, left top, right top, color-stop(0, #f22), color-stop(0.15, #f2f), color-stop(0.3, #22f), color-stop(0.45, #2ff), color-stop(0.6, #2f2), color-stop(0.75, #2f2), color-stop(0.9, #ff2), color-stop(1, #f22)); }
+
+.button_container h5 {
+  font-family: 'Fontdiner Swanky', sans-serif;
+  font-size: 2rem;
+  display: inline-block;
+  position: absolute;
+  top: 3rem; }
+
+/*# sourceMappingURL=main.css.map */

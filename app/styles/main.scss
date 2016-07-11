@@ -19,7 +19,7 @@ body {
 
         .character {
             display: inline-block;
-            width: 24%;
+            width: 22%;
 
             &:hover {
               // transform: scale(1.2);
@@ -134,11 +134,7 @@ body {
   width: 90%;
   height: 300px;
   margin: 36px auto;
-<<<<<<< HEAD
-=======
-  // background: #ccc;
   position: relative;
->>>>>>> 27eeec00155770983f965fbcc1e92dfb5c29c46b
 }
 .protagonist-hit {
   font-family: 'Fontdiner Swanky', cursive;
@@ -171,7 +167,7 @@ body {
     color-stop(1, #f22));
 }
 .enemy-hit {
-  
+
 }
 .enemy-miss {
 
@@ -184,6 +180,5 @@ body {
   position: absolute;
   top: 3rem;
   // left: -5rem;
-
 
 }
